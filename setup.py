@@ -1,4 +1,4 @@
-from setuptools import setup
+from setuptools import setup, find_packages
 
 from codecs import open
 from os import path
@@ -10,7 +10,7 @@ with open(path.join(HERE, 'README.md'), encoding='utf-8') as f:
     
 setup(
     name="pypi_def",
-    version="0.0.1",
+    version="0.0.2",
     description="Contoh Library Python dengan Def.",
     long_description=long_description,
     long_description_content_type="text/markdown",
@@ -29,5 +29,5 @@ setup(
         "Programming Language :: Python :: 3.9",
         "Operating System :: OS Independent"
     ],
-    packages=["pypi_def"]
+    packages=find_packages()
 )
